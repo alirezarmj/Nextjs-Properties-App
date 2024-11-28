@@ -11,7 +11,7 @@ import "photoswipe/dist/photoswipe.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "PropertyPuls | Find The Perfect Rental",
+  title: "DreamRent | Find The Perfect Rental",
   description: "Find your dream rental property",
   keywords: "rental, find rentals, find properties",
 };
@@ -21,6 +21,9 @@ export default function RootLayout({ children }) {
     <GlobalProvider>
       <AuthProvider>
         <html suppressHydrationWarning={true} lang="en">
+          <head>
+            <link rel="icon" type="image/jpeg" href="/webDev.jpeg" sizes="32*32" />
+          </head>
           <body suppressHydrationWarning={true} className={inter.className}>
             <Navbar />
             <main>{children}</main>
