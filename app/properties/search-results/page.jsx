@@ -53,11 +53,11 @@ const SearchResultsPage = () => {
               <FaArrowAltCircleLeft className="mr-2 mb-1" /> Back To Properties
             </Link>
             <h1 className="text-2xl mb-4">Search Results</h1>
-            {properties.length === 0 ? (
+            {properties?.length === 0 ? (
               <p>No search results found</p>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {properties.map((property) => (
+                {properties?.map((property) => (
                   <PropertyCard key={property._id} property={property} />
                 ))}
               </div>
